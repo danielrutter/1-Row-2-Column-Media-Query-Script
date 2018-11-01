@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+  <title>1 Row, 2 Column Media Query Script</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+
+<style>
+@media screen and (min-width: 1px) {
+  header {
+    margin: auto;
+    width: 100%;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  header-left {
+    float: center;
+    text-align: center;
+  }
+  header-right {
+    float: center;
+    text-align: center;
+    font-style: oblique;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin: auto;
+    width: 90%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  header-left {
+    float: left;
+  }
+  header-right {
+    float: right;
+    font-style: oblique;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <header-left>
+      <h1>Your Company Name</h1>
+    </header-left>
+    <header-right>
+      <h2>This is an example for placement of a slogan.</h2>
+    </header-right>
+  </header>
+</div>
+
+</body>
+</html>
